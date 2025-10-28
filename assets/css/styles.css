@@ -1,0 +1,21 @@
+
+:root{ --accent: #00b4d8; }
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, Arial, sans-serif;
+background: linear-gradient(270deg, #0077b6, #00b4d8, #90e0ef, #5a189a);
+background-size: 600% 600%;
+animation: coolFlow 9s ease-in-out infinite;
+background-attachment: fixed;}
+@keyframes coolFlow{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+.nav-glass{background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.06));backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);}
+.hero{min-height:72vh;display:flex;align-items:center;padding-top:90px;position:relative;color:#fff;}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.1));z-index:0;}
+.hero .container{position:relative;z-index:2;}
+.hero-img{max-width:560px;transform:translateY(-8px);}
+.card-img-top{height:220px;object-fit:cover;}
+.footer-dark{background:#0b0b0b;color:white;}
+a.nav-link.active{color:#dff6ff !important;font-weight:600;text-decoration:underline;text-underline-offset:6px;}
